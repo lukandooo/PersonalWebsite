@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Łukasz Święcicki — CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">Ł<span>.</span>Ś</a>
+            <ul class="nav__links" role="list">
+                <li><a href="index.html"   class="nav__link">Home</a></li>
+                <li><a href="cv.html"      class="nav__link active">CV</a></li>
+                <li><a href="ksiazki.html" class="nav__link">Books</a></li>
+                <li><a href="gra.html"     class="nav__link">Game</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <a href="index.html"   class="nav__link">Home</a>
+    <a href="cv.html"      class="nav__link active">CV</a>
+    <a href="ksiazki.html" class="nav__link">Books</a>
+    <a href="gra.html"     class="nav__link">Game</a>
+</div>
+
+<!-- ===================== MAIN ===================== -->
+<main class="main">
+
+    <!-- HERO -->
+    <section class="cv-hero">
+        <div class="container container--text">
+            <h1 class="hero__heading">
+                Curriculum Vitae<span class="accent-dot"></span>
+            </h1>
+            <p class="hero__sub">
+                A 4th-semester Computer Science student aiming to specialise in AI,
+                combining software engineering with data analytics. Raised in a
+                bilingual environment, ensuring native fluency in English technical
+                and project communication. Possess commercial experience in
+                building proprietary B2B tools and optimising business results.
+                Effective in teamwork and public speaking. As an individual with
+                strong entrepreneurial ambitions, I am seeking a summer internship
+                to test my code against large-scale infrastructure and experience the
+                standards of industry leaders from the inside.
+            </p>
+
+            <!-- Contact meta row -->
+            <div class="cv-hero__meta">
+                <a href="mailto:swiecicki.luka@gmail.com">swiecicki.luka@gmail.com</a>
+                <span class="cv-hero__meta-dot">·</span>
+                <a href="https://github.com/lukandooo" target="_blank" rel="noopener">github.com/lukandooo</a>
+                <span class="cv-hero__meta-dot">·</span>
+                <a href="https://linkedin.com/in/lukasz-swiecicki" target="_blank" rel="noopener">linkedin.com/in/lukasz-swiecicki</a>
+                <span class="cv-hero__meta-dot">·</span>
+                <span style="font-size:var(--text-sm);color:var(--clr-text-secondary)">Gdańsk, Poland</span>
+            </div>
+
+            <div class="hero__actions" style="margin-top: var(--space-8);">
+                <a href="media/ENG_CV.pdf" download class="btn btn--primary">Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" aria-labelledby="exp-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="exp-heading">Experience</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline__item">
+                    <div class="timeline__date">Jan 2026 — Present</div>
+                    <div class="timeline__role">Founder / Python Developer</div>
+                    <div class="timeline__company">Dream Garage Hunter</div>
+                    <ul class="timeline__bullets">
+                        <li>Engineered and deployed a Python-based engine for real-time automotive market analytics.</li>
+                        <li>Developed an algorithm reducing the detection time of price bargains from several hours to mere seconds.</li>
+                        <li>Conducted MVP market validation with industry entrepreneurs.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__date">Aug 2024 — Dec 2025</div>
+                    <div class="timeline__role">Founder</div>
+                    <div class="timeline__company">Lavaro Digital — B2B Content Marketing Agency</div>
+                    <ul class="timeline__bullets">
+                        <li>Drove over 15,000 downloads for the 'Smart Workout' mobile application through strategic ad campaign planning, continuous conversion rate analysis, and professional short-form video editing.</li>
+                        <li>Generated a record-breaking $8,000 in single-day revenue for an e-commerce client by overseeing and optimising data-driven Meta Ads campaigns.</li>
+                        <li>Scaled the business and managed a two-person operational team (videographer, video editor).</li>
+                        <li>Actively acquired clients through networking at business events.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__date">Feb 2024 — Apr 2024</div>
+                    <div class="timeline__role">Customer Advisor</div>
+                    <div class="timeline__company">SK Store</div>
+                    <ul class="timeline__bullets">
+                        <li>Provided direct customer service and identified purchasing needs.</li>
+                        <li>Practically trained negotiation skills and working under the pressure of sales targets.</li>
+                        <li>Maintained accurate stock levels and organised warehouse logistics.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="section" aria-labelledby="edu-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="edu-heading">Education &amp; Certifications</h2>
+            </div>
+
+            <div class="edu-grid">
+
+                <div class="edu-card">
+                    <div class="edu-card__date">Oct 2024 — Present</div>
+                    <div class="edu-card__title">BSc in Computer Science</div>
+                    <div class="edu-card__sub">PJATK, Gdańsk</div>
+                    <div class="edu-card__note">AI specialisation from the 5th semester.</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-card__date">Apr 2026</div>
+                    <div class="edu-card__title">AI_devs4</div>
+                    <div class="edu-card__sub">Certificate</div>
+                    <a href="media/certyfikaty/AI_devs4_certificate.pdf" download class="btn btn--outline btn--small">Download PDF</a>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-card__date">Apr 2026</div>
+                    <div class="edu-card__title">Applied Data Science with Python</div>
+                    <div class="edu-card__sub">University of Michigan</div>
+                    <a href="media/certyfikaty/datascience_michigan.pdf" download class="btn btn--outline btn--small">Download PDF</a>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-card__date">Spring 2026 — Expected</div>
+                    <div class="edu-card__title">AWS Academy Cloud Foundations</div>
+                    <div class="edu-card__sub">Amazon Web Services</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-card__date">Jan 2026</div>
+                    <div class="edu-card__title">Python for Everybody</div>
+                    <div class="edu-card__sub">University of Michigan</div>
+                    <a href="media/certyfikaty/pythonForEverybody.pdf" download class="btn btn--outline btn--small">Download PDF</a>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-card__date">Jan 2026</div>
+                    <div class="edu-card__title">Excel Skills for Business</div>
+                    <div class="edu-card__sub">Macquarie University, Sydney</div>
+                    <a href="media/certyfikaty/excel_business.pdf" download class="btn btn--outline btn--small">Download PDF</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" aria-labelledby="skills-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="skills-heading">Skills</h2>
+            </div>
+
+            <div class="skills-groups">
+
+                <div>
+                    <div class="skills-group__label">Tech</div>
+                    <div class="tag-list">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">C / C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML / CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Web Scraping</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">WordPress</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills-group__label">Business &amp; Soft Skills</div>
+                    <div class="tag-list">
+                        <span class="tag">Critical Thinking</span>
+                        <span class="tag">Cross-Functional Teamwork</span>
+                        <span class="tag">Public Speaking</span>
+                        <span class="tag">Creative Problem Solving</span>
+                        <span class="tag">Market Validation (MVP)</span>
+                        <span class="tag">Management</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section" aria-labelledby="lang-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="lang-heading">Languages</h2>
+            </div>
+            <div class="lang-list">
+                <div class="lang-item">
+                    <div class="lang-item__flag">🇬🇧</div>
+                    <div>
+                        <div class="lang-item__name">English</div>
+                        <div class="lang-item__level">Native — British Citizenship</div>
+                    </div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-item__flag">🇵🇱</div>
+                    <div>
+                        <div class="lang-item__name">Polish</div>
+                        <div class="lang-item__level">Native</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section" aria-labelledby="interests-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="interests-heading">Interests</h2>
+            </div>
+
+            <div class="interests-list">
+                <span class="interest-tag">Strength Training</span>
+                <span class="interest-tag">Basketball</span>
+                <span class="interest-tag">Automotive</span>
+                <span class="interest-tag">Business</span>
+                <span class="interest-tag">Video Editing</span>
+                <span class="interest-tag">Geopolitics</span>
+                <span class="interest-tag">Institutional Economics</span>
+            </div>
+
+            <!-- Analytical Reading CTA -->
+            <div class="reading-cta">
+                <div class="reading-cta__text">
+                    <p>Analytical Reading</p>
+                    <p>
+                        I maintain a personal database where I track and analyse my reading habits.
+                        I use data-driven insights to prioritise future book acquisitions — structured
+                        the same way I approach engineering problems.
+                    </p>
+                </div>
+                <a href="ksiazki.html" class="btn btn--outline">See my books →</a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <p class="footer__copy">© 2025 <span>Łukasz Święcicki</span></p>
+            <p class="footer__copy">Internet Technologies — university project &amp; professional portfolio</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Łukasz Święcicki — Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <!-- Press Start 2P — pixel font tylko dla elementów gry -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">Ł<span>.</span>Ś</a>
+            <ul class="nav__links" role="list">
+                <li><a href="index.html"   class="nav__link">Home</a></li>
+                <li><a href="cv.html"      class="nav__link">CV</a></li>
+                <li><a href="ksiazki.html" class="nav__link">Books</a></li>
+                <li><a href="gra.html"     class="nav__link active">Game</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <a href="index.html"   class="nav__link">Home</a>
+    <a href="cv.html"      class="nav__link">CV</a>
+    <a href="ksiazki.html" class="nav__link">Books</a>
+    <a href="gra.html"     class="nav__link active">Game</a>
+</div>
+
+<!-- ===================== MAIN ===================== -->
+<main class="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="game-heading">
+        <div class="container container--text">
+            <p class="hero__label">Open Source</p>
+            <h1 class="hero__heading" id="game-heading">
+                Snake<span class="accent-dot"></span>
+            </h1>
+            <p class="hero__sub">
+                A classic Snake game built in vanilla JavaScript.
+                Use arrow keys to move — don't bite yourself.
+            </p>
+            <div class="hero__actions">
+                <a href="https://github.com/lukandooo" target="_blank" rel="noopener" class="btn btn--primary">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAME -->
+    <section class="section" aria-label="Game">
+        <div class="container">
+
+            <!-- Retro terminal wrapper -->
+            <div class="retro-terminal">
+
+                <!-- Terminal top bar -->
+                <div class="retro-terminal__bar">
+                    <div class="retro-terminal__dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="retro-terminal__title">SNAKE.exe</span>
+                    <span class="retro-terminal__tag">JavaScript · Canvas</span>
+                </div>
+
+                <!-- Terminal body -->
+                <div class="retro-terminal__body">
+
+                    <!-- Score row -->
+                    <div class="retro-scoreboard">
+                        <div class="retro-scoreboard__item">
+                            <span class="retro-scoreboard__label">SCORE</span>
+                            <span class="retro-scoreboard__value" id="scoreDisplay">000</span>
+                        </div>
+                        <div class="retro-scoreboard__item">
+                            <span class="retro-scoreboard__label">HIGH</span>
+                            <span class="retro-scoreboard__value" id="highScoreDisplay">000</span>
+                        </div>
+                        <div class="retro-scoreboard__item retro-scoreboard__item--status">
+                            <span class="retro-scoreboard__label">STATUS</span>
+                            <span class="retro-scoreboard__value" id="statusDisplay">READY</span>
+                        </div>
+                    </div>
+
+                    <!-- Canvas -->
+                    <canvas id="board"></canvas>
+
+                    <!-- Controls hint -->
+                    <div class="retro-controls">
+                        <span>↑ ↓ ← →</span>
+                        <span class="retro-controls__sep">·</span>
+                        <span>ARROW KEYS TO MOVE</span>
+                        <span class="retro-controls__sep">·</span>
+                        <span>PRESS ANY ARROW TO START</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <p class="footer__copy">© 2026 <span>Łukasz Święcicki</span></p>
+            <p class="footer__copy">Internet Technologies — university project &amp; professional portfolio</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>

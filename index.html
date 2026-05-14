@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Łukasz Święcicki — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <div class="nav__inner">
+
+            <a href="index.html" class="nav__logo">
+                Ł<span>.</span>Ś
+            </a>
+
+            <ul class="nav__links" role="list">
+                <li><a href="index.html"   class="nav__link active">Home</a></li>
+                <li><a href="cv.html"      class="nav__link">CV</a></li>
+                <li><a href="ksiazki.html" class="nav__link">Books</a></li>
+                <li><a href="gra.html"     class="nav__link">Game</a></li>
+            </ul>
+
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <a href="index.html"   class="nav__link active">Home</a>
+    <a href="cv.html"      class="nav__link">CV</a>
+    <a href="ksiazki.html" class="nav__link">Books</a>
+    <a href="gra.html"     class="nav__link">Game</a>
+</div>
+
+<!-- ===================== MAIN ===================== -->
+<main class="main" id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="container container--text">
+            <p class="hero__label">Hi, I'm</p>
+            <h1 class="hero__heading" id="hero-heading">
+                Łukasz Święcicki<span class="accent-dot"></span><br />
+                <em>student &amp; developer</em>
+            </h1>
+            <p class="hero__sub">
+                I study Computer Science, build projects and read books.
+                Here you'll find my CV, side projects and a few things I enjoy.
+            </p>
+            <div class="hero__actions">
+                <a href="cv.html"  class="btn btn--primary">View CV</a>
+                <a href="#contact" class="btn btn--outline">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK STATS -->
+    <section class="section" aria-labelledby="stats-heading">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="stats-heading">By the numbers</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card__value">IV<span>-th</span></div>
+                    <div class="stat-card__label">Semester</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">90<span>+</span></div>
+                    <div class="stat-card__label">Books read</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">8<span>+</span></div>
+                    <div class="stat-card__label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__value">120<span>kg</span></div>
+                    <div class="stat-card__label">Bench press max</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT I'M WORKING ON -->
+    <section class="section" aria-labelledby="now-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="now-heading">What I'm working on</h2>
+            </div>
+            <div class="now-list">
+
+                <div class="now-item">
+                    <div class="now-item__status now-item__status--active">
+                        <span class="now-item__pulse"></span>
+                        Active
+                    </div>
+                    <div class="now-item__body">
+                        <div class="now-item__title">Looking for an internship</div>
+                        <div class="now-item__desc">Seeking a summer software engineering internship — front-end, Python or data. Open to remote and Gdańsk-based roles.</div>
+                    </div>
+                    <a href="#contact" class="now-item__cta">Get in touch →</a>
+                </div>
+
+                <div class="now-item">
+                    <div class="now-item__status now-item__status--progress">
+                        In Progress
+                    </div>
+                    <div class="now-item__body">
+                        <div class="now-item__title">AWS Academy Cloud Foundations</div>
+                        <div class="now-item__desc">Completing the AWS course — expected certificate Spring 2026.</div>
+                    </div>
+                    <a href="cv.html" class="now-item__cta">See CV →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="section" aria-labelledby="events-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="events-heading">Upcoming events</h2>
+            </div>
+            <div class="events-list">
+
+                <a href="https://www.nocodepoland.com/" target="_blank" rel="noopener" class="event-item">
+                    <div class="event-item__date">
+                        <span class="event-item__day">7–8</span>
+                        <span class="event-item__month">May</span>
+                    </div>
+                    <div class="event-item__body">
+                        <div class="event-item__name">No-code &amp; AI Event #4</div>
+                        <div class="event-item__meta">Gdańsk · Attendee</div>
+                    </div>
+                    <span class="event-item__arrow">→</span>
+                </a>
+
+                <a href="https://infoshare.pl/" target="_blank" rel="noopener" class="event-item">
+                    <div class="event-item__date">
+                        <span class="event-item__day">20–21</span>
+                        <span class="event-item__month">May</span>
+                    </div>
+                    <div class="event-item__body">
+                        <div class="event-item__name">Infoshare 2025</div>
+                        <div class="event-item__meta">Gdańsk · Attendee</div>
+                    </div>
+                    <span class="event-item__arrow">→</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container container--text">
+            <div class="section__header">
+                <h2 class="section__title accent-dot" id="contact-heading">Contact</h2>
+            </div>
+            <div class="contact-list">
+                <a href="mailto:swiecicki.luka@gmail.com" class="contact-item">
+                    <div class="contact-item__icon" aria-hidden="true">✉</div>
+                    <div>
+                        <div class="contact-item__label">Email</div>
+                        <div class="contact-item__value">swiecicki.luka@gmail.com</div>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/lukasz-swiecicki" class="contact-item" target="_blank" rel="noopener">
+                    <div class="contact-item__icon" aria-hidden="true">in</div>
+                    <div>
+                        <div class="contact-item__label">LinkedIn</div>
+                        <div class="contact-item__value">linkedin.com/in/lukasz-swiecicki</div>
+                    </div>
+                </a>
+                <a href="https://github.com/lukandooo" class="contact-item" target="_blank" rel="noopener">
+                    <div class="contact-item__icon" aria-hidden="true">gh</div>
+                    <div>
+                        <div class="contact-item__label">GitHub</div>
+                        <div class="contact-item__value">github.com/lukandooo</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <p class="footer__copy">
+                © 2026 <span>Łukasz Święcicki</span>
+            </p>
+            <p class="footer__copy">
+                Internet Technologies — university project &amp; professional portfolio
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- JS w osobnym pliku -->
+<script src="script.js"></script>
+
+</body>
+</html>
